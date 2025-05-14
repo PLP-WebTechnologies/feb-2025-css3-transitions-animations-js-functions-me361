@@ -1,0 +1,47 @@
+/* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Button style */
+#themeBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animate on click */
+#themeBtn.animate {
+  animation: bounce 0.4s;
+}
+
+/* Bounce keyframe */
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
